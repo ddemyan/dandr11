@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +7,41 @@
     <style>
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f6f8fa; /* Светло-серый, как на GitHub */
-            color: #24292e; /* Тёмно-серый для текста */
+            color: #24292e; /* Dark gray for text */
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
             text-align: center;
+            
+            /* Background image settings */
+            background-image: url('1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         .container {
             max-width: 650px;
             padding: 40px;
-            border: 1px solid #e1e4e8; /* Тонкая серая рамка */
+            border: 1px solid #e1e4e8;
             border-radius: 16px;
-            background: #ffffff; /* Чисто белый фон карточки */
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Легкая тень */
+            /* White background with transparency for readability */
+            background: rgba(255, 255, 255, 0.92); 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Slightly stronger shadow */
+            backdrop-filter: blur(5px); /* Optional: blurs background behind card */
         }
         h1 {
-            color: #0366d6; /* Классический синий цвет GitHub */
+            color: #0366d6; /* GitHub blue */
             font-size: 2.8rem;
             margin-bottom: 5px;
             letter-spacing: -1px;
+            margin-top: 0;
         }
         .headline {
             font-size: 1.1rem;
-            color: #586069; /* Серый для подзаголовка */
+            color: #586069; /* Gray for subtitle */
             margin-bottom: 35px;
             text-transform: uppercase;
             letter-spacing: 2.5px;
@@ -40,12 +49,12 @@
         }
         .quote {
             font-style: italic;
-            border-left: 4px solid #28a745; /* Зеленая полоса слева */
+            border-left: 4px solid #28a745; /* Green bar */
             padding: 15px 20px;
             margin: 25px 0;
             text-align: left;
             color: #444d56;
-            background-color: #f0fff4; /* Очень светло-зеленый фон цитаты */
+            background-color: #f0fff4; /* Light green quote background */
             border-radius: 6px;
         }
         p {
@@ -60,28 +69,28 @@
             display: inline-block;
             padding: 12px 24px;
             margin: 8px;
-            color: #ffffff;
+            color: #ffffff !important; /* Force white text */
             text-decoration: none;
             border-radius: 8px;
-            background-color: #0366d6; /* Синяя кнопка */
+            background-color: #0366d6; /* Blue button */
             border: 1px solid rgba(27,31,35,0.15);
             font-weight: 600;
             transition: background-color 0.2s, transform 0.1s;
         }
         .btn:hover {
-            background-color: #0255b3; /* Чуть темнее при наведении */
+            background-color: #0255b3;
             transform: translateY(-1px);
         }
         .btn-secondary {
             background-color: #f6f8fa;
-            color: #24292e;
+            color: #24292e !important;
             border: 1px solid #e1e4e8;
         }
         .btn-secondary:hover {
             background-color: #e1e4e8;
         }
         .highlight {
-            color: #22863a; /* Тёмно-зеленый для акцента */
+            color: #22863a; /* Dark green for emphasis */
             font-weight: 600;
         }
     </style>
@@ -92,10 +101,10 @@
         <div class="headline">AI Logic Auditor & Red Teamer</div>
         
         <div class="quote">
-            "Выявляю <span class="highlight">архитектурные ловушки</span> и логические парадоксы в LLM, которые остаются незамеченными при стандартном тестировании."
+            "I uncover <span class="highlight">architectural traps</span> and logical paradoxes within LLMs that go unnoticed during standard testing."
         </div>
 
-        <p>Специализируюсь на RLHF, оценке безопасности данных и глубоком аудите ответов искусственного интеллекта. Использую своё чутьё на логические ошибки для повышения надёжности моделей.</p>
+        <p>Specializing in RLHF, data safety assessment, and deep auditing of AI responses. Leveraging a keen sense for logical fallacies to enhance model reliability.</p>
 
         <div class="links">
             <a href="https://www.linkedin.com/in/андрей-демьяненко" class="btn">LinkedIn</a>
