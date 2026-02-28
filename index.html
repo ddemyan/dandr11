@@ -6,64 +6,83 @@
     <title>Dandr11 | AI Logic Auditor</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f6f8fa; /* Светло-серый, как на GitHub */
+            color: #24292e; /* Тёмно-серый для текста */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             text-align: center;
         }
         .container {
-            max-width: 600px;
-            padding: 20px;
-            border: 1px solid #30363d;
-            border-radius: 12px;
-            background: #161b22;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 650px;
+            padding: 40px;
+            border: 1px solid #e1e4e8; /* Тонкая серая рамка */
+            border-radius: 16px;
+            background: #ffffff; /* Чисто белый фон карточки */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Легкая тень */
         }
         h1 {
-            color: #58a6ff;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            color: #0366d6; /* Классический синий цвет GitHub */
+            font-size: 2.8rem;
+            margin-bottom: 5px;
+            letter-spacing: -1px;
         }
         .headline {
-            font-size: 1.2rem;
-            color: #8b949e;
-            margin-bottom: 30px;
+            font-size: 1.1rem;
+            color: #586069; /* Серый для подзаголовка */
+            margin-bottom: 35px;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 2.5px;
+            font-weight: 600;
         }
         .quote {
             font-style: italic;
-            border-left: 4px solid #238636;
-            padding-left: 15px;
-            margin: 20px 0;
+            border-left: 4px solid #28a745; /* Зеленая полоса слева */
+            padding: 15px 20px;
+            margin: 25px 0;
             text-align: left;
-            color: #d1d5db;
+            color: #444d56;
+            background-color: #f0fff4; /* Очень светло-зеленый фон цитаты */
+            border-radius: 6px;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
         }
         .links {
-            margin-top: 30px;
+            margin-top: 35px;
         }
         .btn {
             display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
+            padding: 12px 24px;
+            margin: 8px;
             color: #ffffff;
             text-decoration: none;
-            border-radius: 6px;
-            background-color: #21262d;
-            border: 1px solid #f0f6fc1a;
-            transition: 0.3s;
+            border-radius: 8px;
+            background-color: #0366d6; /* Синяя кнопка */
+            border: 1px solid rgba(27,31,35,0.15);
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.1s;
         }
         .btn:hover {
-            background-color: #30363d;
-            border-color: #8b949e;
+            background-color: #0255b3; /* Чуть темнее при наведении */
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            background-color: #f6f8fa;
+            color: #24292e;
+            border: 1px solid #e1e4e8;
+        }
+        .btn-secondary:hover {
+            background-color: #e1e4e8;
         }
         .highlight {
-            color: #aff5b4;
+            color: #22863a; /* Тёмно-зеленый для акцента */
+            font-weight: 600;
         }
     </style>
 </head>
@@ -76,11 +95,11 @@
             "Выявляю <span class="highlight">архитектурные ловушки</span> и логические парадоксы в LLM, которые остаются незамеченными при стандартном тестировании."
         </div>
 
-        <p>Специализируюсь на RLHF, оценке безопасности данных и глубоком аудите ответов искусственного интеллекта.</p>
+        <p>Специализируюсь на RLHF, оценке безопасности данных и глубоком аудите ответов искусственного интеллекта. Использую своё чутьё на логические ошибки для повышения надёжности моделей.</p>
 
         <div class="links">
             <a href="https://www.linkedin.com/in/андрей-демьяненко" class="btn">LinkedIn</a>
-            <a href="mailto:pro@dandr11.me" class="btn">Email Me</a>
+            <a href="mailto:pro@dandr11.me" class="btn btn-secondary">Email Me</a>
         </div>
     </div>
 </body>
